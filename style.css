@@ -1,5 +1,13 @@
+body {
+	background-image: linear-gradient(to bottom, darkblue, black);
+}
+
 h1, h2 {
 	margin: 0px;
+}
+
+h2 {
+	margin-top: 5px;
 }
 
 h3 {
@@ -9,9 +17,28 @@ h3 {
 
 #title {
 	font-size: 2.25em;
+	color: white;
 	text-align: center;
+	align-self: center;
 	grid-row: 1/ span 3;
 	grid-column: 5/span 8;
+	background-image: linear-gradient(to bottom, rgb(0, 0, 134), rgb(0, 0, 105));
+	max-width: 500px;
+	transition: 2s;
+}
+
+#titledes {
+	text-align: center;
+	align-self: center;
+	grid-row: 1/ span 3;
+	grid-column: 5/span 8;
+	background-color: none;
+	color: white;
+	max-width: 500px;
+}
+
+#title:hover {
+	opacity: 0;
 }
 
 #key1 {
@@ -25,6 +52,10 @@ h3 {
 	grid-template-columns: 18;
 	grid-template-rows: 10;
 	grid-gap: 1px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+	margin: 20px 50px 0px 50px;
 }
 
 .element {
@@ -32,6 +63,7 @@ h3 {
 	text-align: center;
 	transition: 0.01s;
 	font-size: 0.65em;
+	align-self: center;
 }
 
 .element:hover {
